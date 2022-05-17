@@ -36,8 +36,8 @@ done
 pandoc posts/$1.md -o target/posts/$1.html
 pandoc index.md -o target/index.html
 
-sed -i 's/.md/.html/g' target/$1.html
-sed -i 's/.md/.html/g' target/posts/index.html
+sed -i 's/.md/.html/g' target/posts/$1.html
+sed -i 's/.md/.html/g' target/index.html
 
 # Sync to repo
 git add .
