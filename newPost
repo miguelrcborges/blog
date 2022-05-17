@@ -28,12 +28,15 @@ echo "---
 
 for POST in $(find ./posts/*.md -printf '%T@ %p\n' | sort -k1 -n -r | cut -d ' ' -f2- | head -n 10) 
 do 
-  echo "* [$(grep '#' $POST | head -n 1 | cut -c 3)]($POST)" >> index.md
+  echo "* [$(grep '#' $POST | head -n 1 | cut -c 3-)]($POST)" >> index.md
 done
 
 # Build
 pandoc posts/$1.md -o target/$1.html
 pandoc index.md -o target/index.html
+
+sed -i 's/.md/.html/g' target/$1.html
+sed -i 's/.md/.html/g' target/index.html
 
 # Sync to repo
 git add .
