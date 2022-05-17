@@ -8,7 +8,6 @@ if  [ ! $1 ]; then
   exit
 fi
 
-echo $1
 echo "---
   date: $DATE
   keywords:
@@ -25,10 +24,10 @@ echo "---
 
 # Recent posts
 " > index.md
-pwd
+
 for POST in $(find ./posts/*.md -printf '%T@ %p\n' | sort -k1 -n -r | cut -d ' ' -f2- | head -n 10) 
 do 
-  echo "* $(grep '#' $POST | head -n 1 | cut -c 3)">> index.md
+  echo "* [$(grep '#' $POST | head -n 1 | cut -c 3)]($POST)" >> index.md
 done
 
 # Build
