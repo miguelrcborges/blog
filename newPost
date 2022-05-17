@@ -19,6 +19,7 @@ nvim posts/$1.md
 
 # Generates index file
 echo "---
+  title: Index
   date: $DATE
   disclaimer: Here are only shown the first 10 pages. If you want to check older posts, go to the github page.
 ---
@@ -28,11 +29,11 @@ echo "---
 
 for POST in $(find ./posts/*.md -printf '%T@ %p\n' | sort -k1 -n -r | cut -d ' ' -f2- | head -n 10) 
 do 
-  echo "* [$(grep '#' $POST | head -n 1 | cut -c 3-)]($POST)" >> index.md
+  echo "* [$(grep 'title:' $POST | head -n 1 | cut -c 10-)]($POST)" >> index.md
 done
 
 # Build
-pandoc posts/$1.md -o target/$1.html
+pandoc posts/$1.md -o target/posts/$1.html
 pandoc index.md -o target/index.html
 
 sed -i 's/.md/.html/g' target/$1.html
