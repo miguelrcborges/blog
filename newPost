@@ -1,0 +1,17 @@
+#!/bin/sh
+
+DATE=$(date)
+
+if  [ ! $1 ]; then
+  echo Please add a post name
+  exit
+fi
+
+echo $1
+echo "---
+  date: $DATE
+  keywords:
+---
+" > posts/$1.md
+
+nvim posts/$1.md
