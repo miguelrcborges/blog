@@ -18,6 +18,21 @@ echo "---
 nvim posts/$1.md
 
 # Generates index file
+echo "---
+  date: $DATE
+  disclaimer: Here are only shown the first 10 pages. If you want to check older posts, go to the github page.
+---
+
+# Recent posts
+" > index.md
+pwd
+for POST in $(find ./posts/*.md -printf '%T@ %p\n' | sort -k1 -n -r | cut -d ' ' -f2- | head -n 10) 
+do 
+  echo "* $(grep '#' $POST | head -n 1 | cut -c 3)">> index.md
+done
+
+# Build
+make
 
 # Sync to repo
 git add .
