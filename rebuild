@@ -5,7 +5,7 @@ DATE=$(date)
 echo "---
   title: Index
   date: $DATE
-  disclaimer: Here are only shown the first 10 pages. If you want to check older posts, go to the github page.
+  disclaimer: Here are only shown the newest 10 pages. If you want to check older posts, go to the github page.
 ---
 
 # Recent posts

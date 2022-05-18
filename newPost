@@ -21,7 +21,7 @@ nvim posts/$1.md
 echo "---
   title: Index
   date: $DATE
-  disclaimer: Here are only shown the newer 10 posts. If you want to check older posts, go to the github page.
+  disclaimer: Here are only shown the newest 10 posts. If you want to check older posts, go to the github page.
 ---
 
 # Recent posts
