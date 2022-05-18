@@ -1,23 +1,7 @@
 #!/bin/sh
 
-# Creates new file
 DATE=$(date)
 
-if  [ ! $1 ]; then
-  echo Please add a post name
-  exit
-fi
-
-echo "---
-  title: 
-  date: $DATE
-  keywords:
----
-" > posts/$1.md
-
-nvim posts/$1.md
-
-# Generates index file
 echo "---
   title: Index
   date: $DATE
@@ -30,16 +14,9 @@ echo "---
 for POST in $(find ./posts/*.md -printf '%T@ %p\n' | sort -k1 -n -r | cut -d ' ' -f2- | head -n 10) 
 do 
   echo "* [$(grep 'title:' $POST | head -n 1 | cut -c 10-)]($POST)" >> index.md
+  pandoc $POST -o target/${POST%.md}.html --template=templates/posts.html
+  sed -i 's/.md/.html/g' target/${POST%.md}.html
 done
 
-# Build
-pandoc posts/$1.md -o target/posts/$1.html --template=templates/posts.html
 pandoc index.md -o target/index.html --template=templates/index.html
-
-sed -i 's/.md/.html/g' target/posts/$1.html
 sed -i 's/.md/.html/g' target/index.html
-
-# Sync to repo
-git add .
-git commit -m "$DATE Update: $1"
-git push

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --bg: #282a36;
+    --fg: #f8f8f2;
+    --cyan: #8be9fd;
+    --pink: #ff79c6;
+    --green: #50fa7b;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--bg);
+    color: var(--fg);
+
+    font-size: 100%;
+    text-align: center;
+
+    width: 50%;
+    margin: 10vh auto;
+}
+
+
+.title {
+    font-size: 4em;
+    font-style: bold;
+}
+
+.sub-header {
+    margin-bottom: 10vh;
+}
+
+.content {
+    margin: 10vh 0;
+}
+
+.disclaimer {
+    font-style: italic;
+}
+
+a, a:visited {
+    color: var(--cyan);
+    text-decoration: none; 
+}
+
+a:visited::after {
+    content: "Visited";
+    font-style: italic;
+    color: var(--green);
+}
+
+li {
+    color: var(--pink);
+    text-align: left;
+}
+
+h1 {
+    color: var(--pink);
+}
+
+h2 {
+    color: var(--cyan);
+}
+
+h3 {
+    color: var(--green);
+}
