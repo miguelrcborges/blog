@@ -16,7 +16,7 @@ body {
     font-size: 100%;
     text-align: center;
 
-    width: 50%;
+    width: min(95vw, 95vh); 
     margin: 10vh auto;
 }
 
@@ -56,6 +56,7 @@ li {
 
 h1 {
     color: var(--pink);
+    margin-top: 10vh;
 }
 
 h2 {
