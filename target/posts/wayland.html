@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Rodrigues Carrilho Borges">
+    <title>Tried out wayland. It wasn’t good.</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/posts.css">
+</head>
+<body>
+    <span class="title">Tried out wayland. It wasn’t good.</span>
+    <div class="sub-header">
+        <span class="date">Mon Jun 13 05:06:35 PM WEST 2022</span>
+                <span class="keywords">Keywords: linux, graphical
+server</span>
+            </div>
+    <div class="content">
+        <h1 id="so-what-made-me-try-wayland">So what made me try
+        wayland</h1>
+        <p>I like the idea of integrated compositor with the window
+        manager. Not only that, Wayland is visually smoother. However,
+        in my two days experience, I came across a lot of problems.</p>
+        <h2 id="the-problems">The problems</h2>
+        <ul>
+        <li><p>Screen Artifacts. This was a more relevant problem on the
+        fullscreen mode.</p>
+        <ul>
+        <li>This problem is most likely caused by using nvidia on
+        wayland, sadly.</li>
+        </ul></li>
+        <li><p>Each compositor has to implement his own calls. This is
+        not so bad if every compositor turns to be wlroots
+        based.</p></li>
+        <li><p>Setting up xdg-portal isn’t easy, or maybe I was unlucky
+        with some incompability.</p></li>
+        </ul>
+        <h1 id="conclusion">Conclusion</h1>
+        <p>That being said, I won’t use wayland again on my desktop most
+        likely soon. Once it’s more mature, I’ll give it another
+        try.</p>
+    </div>
+    </body>
+</html>
