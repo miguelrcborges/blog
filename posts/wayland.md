@@ -1,5 +1,5 @@
 ---
-  title: Tried out wayland. It wasn't good.
+  title: Tried out wayland. It wasn't the best experience.
   date: Mon Jun 13 05:06:35 PM WEST 2022
   keywords: linux, graphical server
 ---
@@ -22,4 +22,7 @@ However, in my two days experience, I came across a lot of problems.
 
 # Conclusion
 
-That being said, I won't use wayland again on my desktop most likely soon. Once it's more mature, I'll give it another try.
+That being said, I won't use wayland again on my desktop most likely soon. When it turns more mature, I'll give it another try.
+
+
+EDIT: Seems the problems I was having with xdg-portal were related to the compositor.
