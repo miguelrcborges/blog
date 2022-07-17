@@ -1,5 +1,5 @@
-baseURL = 'miguelrcborges.github.io/blog/'
+baseURL = 'https://miguelrcborges.github.io/blog/'
 languageCode = 'en-us'
 title = "Miguel Borges' Blog"
-#canonifyURLs = true
+canonifyURLs = true
 publishDir = "docs"
