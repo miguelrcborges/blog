@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>{{ .Site.Title }}</h1>
+  <br>
+  {{ range .Pages }}
+    <div class="post">
+      <a href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2></a>
+      <p>Reading time: {{ .ReadingTime }} minute(s)</p>
+      <P>Date: {{ .Date }}</p>
+    </div>
+  {{end}}
+{{end}}

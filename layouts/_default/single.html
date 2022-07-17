@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  <p>Post date: {{ .Date }}</p>
+  <p>Reading time: {{ .ReadingTime }} minute(s)</p>
+  <br>
+  <hr width=90% align="center">
+  <br>
+  {{ .Content }}
+{{end}}

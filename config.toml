@@ -1,3 +1,4 @@
 baseURL = 'miguelrcborges.github.io/blog/'
 languageCode = 'en-us'
 title = "Miguel Borges' Blog"
+canonifyURLs = true
