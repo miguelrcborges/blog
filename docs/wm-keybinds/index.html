@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://miguelrcborges.github.io/blog/css/global.css">
+  
+  
+  <title>Miguel Borges&#39; Blog | Your WM keybinds aren&#39;t vim-like, are emacs-like</title>
+</head>
+
+  <body>
+    
+  <h1>Your WM keybinds aren&#39;t vim-like, are emacs-like</h1>
+  <p>Post date: 2022-09-06 13:56:53 &#43;0100 WEST</p>
+  <p>Reading time: 2 minute(s)</p>
+  <br>
+  <hr width=90% align="center">
+  <br>
+  <p>I&rsquo;ve read in a lot of places people commenting that tiling windows managers offer you &ldquo;vim-like&rdquo; keybinds.
+Those statements are somewhat inaccurate.</p>
+<p>Vim is a modal based text editor. It relies on modes to do certain groups of actions.
+Even though Emacs is also extensible and customizable, it isn&rsquo;t modal based.
+Emacs relies on keybinds that are &ldquo;chords&rdquo;, composed by a key with some Mnemonies and another key that act as a kind of a modifier.
+<a href="https://caiorss.github.io/Emacs-Elisp-Programming/Keybindings.html">Check here the default Emacs keybinds</a>.</p>
+<p>On modal based, chords aren&rsquo;t used. The prefixes used in Emacs keybinds are replaced by a mode and chords are replaced by noun-verb expressions.</p>
+<h1 id="how-would-it-look-like">How would it look like</h1>
+<p>I&rsquo;ll give two examples to give an idea of how a modal based window manager would look like.</p>
+<h2 id="changing-focused-window">Changing focused window</h2>
+<p>On most window managers, this is just done by combining the <em>Super</em> key (the default modifier used for window managing) and a direction (h, j, k, l).
+On a modal based keybinds, this would be almost the same, but done in a sequence (instead of <em>Super</em> + <em>direction</em>, <em>Super</em> =&gt; <em>direction</em>).</p>
+<h2 id="moving-focused">Moving focused</h2>
+<p>Generally, this is done by adding a modifier over the combination used to change the focused window. The most commonly used is <em>Shift</em>
+(being the end result <em>Super</em> + <em>Shift</em> + <em>direction</em>).</p>
+<p>On a modal based, we would need to create a move window mode. Let&rsquo;s say that the key <em>m</em> (standing to move) enters in that mode.
+That would be <em>Super</em> =&gt; <em>m</em> =&gt; <em>direction</em>.</p>
+
+
+  </body>
+</html>

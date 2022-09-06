@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://miguelrcborges.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Your WM keybinds aren&#39;t vim-like, are emacs-like</title>
+      <link>https://miguelrcborges.github.io/blog/wm-keybinds/</link>
+      <pubDate>Tue, 06 Sep 2022 13:56:53 +0100</pubDate>
+      
+      <guid>https://miguelrcborges.github.io/blog/wm-keybinds/</guid>
+      <description>I&amp;rsquo;ve read in a lot of places people commenting that tiling windows managers offer you &amp;ldquo;vim-like&amp;rdquo; keybinds. Those statements are somewhat inaccurate.
+Vim is a modal based text editor. It relies on modes to do certain groups of actions. Even though Emacs is also extensible and customizable, it isn&amp;rsquo;t modal based. Emacs relies on keybinds that are &amp;ldquo;chords&amp;rdquo;, composed by a key with some Mnemonies and another key that act as a kind of a modifier.</description>
+    </item>
+    
+    <item>
       <title>First Post</title>
       <link>https://miguelrcborges.github.io/blog/first-post/</link>
       <pubDate>Sun, 17 Jul 2022 01:03:20 +0100</pubDate>
