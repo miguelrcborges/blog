@@ -33,6 +33,7 @@ a {
   border: 4px dashed var(--fg);
   border-radius: 20px;
   padding: 20px;
+  margin: 2.0rem 0;
 }
 
 code {
