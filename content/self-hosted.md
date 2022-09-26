@@ -5,12 +5,12 @@ draft: false
 ---
 
 So I've decided to go self-hosted. It's quite easy and cheap to start hosting your own stuff.
-I started doing this by taking <a href="https://www.vultr.com/promo/try150/">Vultr this promo</a>, where I would get 150$ free to use (without time limit - I can use it for 30 months).
+I started doing this by taking [this Vultr promo](https://www.vultr.com/promo/try150/), where I would get 150$ free to use (without time limit - I can use it for 30 months).
 
 For you the reaeder, if you don't want to invest money, there are other options.
-- <a href="https://cloud.google.com">Google Cloud</a> - Offers you a VM totally for free (but without static IP).
-- <a href="https://www.oracle.com/cloud/free/">Oracle's Cloud</a> - Offers you a quite powerful VM (for some reason they didn't accept my card).
-- <a href="https://www.replit.com">Replit</a> - Place where you can host unlimited(?) "nix" containers. Is where I host my Whoogle instance. They just force your repo to be open source (although you could still host there binaries which source would be hidden lol).
+- [Google Cloud](https://cloud.google.com) - Offers you a VM totally for free (but without static IP).
+- [Oracle's Cloud](https://www.oracle.com/cloud/free/) - Offers you a quite powerful VM (for some reason they didn't accept my card).
+- [Replit](https://www.replit.com) - Place where you can host unlimited(?) "nix" containers. Is where I host my Whoogle instance. They just force your repo to be open source (although you could still host there binaries which source would be hidden lol).
 
 Another option could be hosting on a old laptop/mobile phone.
 
@@ -26,8 +26,8 @@ I believe everyone that has interest in linux/backends/deployment should do it o
 
 I wanted to have more ideas on what I could host. Currently I'm hosting:
 - DNS server (AdGuard Home)
-- Git Server - <code>ssh vps.miguelneedssleep.ml -p 23231</code>
-- <a href="https://google.miguelneedssleep.ml">Whoogle</a>
+- Git Server - `ssh vps.miguelneedssleep.ml -p 23231`
+- [Whoogle](https://google.miguelneedssleep.ml)
 
 
 # How do I get started in self-hosting
