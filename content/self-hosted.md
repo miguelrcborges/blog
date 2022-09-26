@@ -35,4 +35,4 @@ I wanted to have more ideas on what I could host. Currently I'm hosting:
 I would recommend you to start on replit. You can host there stuff for absolutely free.
 On Whoogle's GitHub page you even have a one click deploy to create your instance.
 
-Once you find yourself limited to what if offers you, rent a server and start hosting this basic stuff that I also host, cause you most likely would use it too.
+Once you find yourself limited to what replit offers you, rent a server and start hosting this basic stuff that I also host, cause you most likely would use it too.
