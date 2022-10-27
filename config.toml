@@ -1,4 +1,4 @@
-baseURL = 'https://miguelrcborges.github.io/blog/'
+baseURL = 'https://blog.miguelneedssleep.ml/'
 languageCode = 'en-us'
 title = "Miguel Borges' Blog"
 canonifyURLs = true

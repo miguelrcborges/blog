@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Miguel Borges&#39; Blog</title>
-    <link>https://miguelrcborges.github.io/blog/</link>
+    <link>https://blog.miguelneedssleep.ml/</link>
     <description>Recent content on Miguel Borges&#39; Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://miguelrcborges.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://blog.miguelneedssleep.ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Going Self-Hosted</title>
-      <link>https://miguelrcborges.github.io/blog/self-hosted/</link>
+      <link>https://blog.miguelneedssleep.ml/self-hosted/</link>
       <pubDate>Mon, 26 Sep 2022 23:28:14 +0100</pubDate>
       
-      <guid>https://miguelrcborges.github.io/blog/self-hosted/</guid>
+      <guid>https://blog.miguelneedssleep.ml/self-hosted/</guid>
       <description>So I&amp;rsquo;ve decided to go self-hosted. It&amp;rsquo;s quite easy and cheap to start hosting your own stuff. I started doing this by taking this Vultr promo, where I would get 150$ free to use (without time limit - I can use it for 30 months).
 For you the reaeder, if you don&amp;rsquo;t want to invest money, there are other options.
 Google Cloud - Offers you a VM totally for free (but without static IP).</description>
@@ -19,20 +19,20 @@ Google Cloud - Offers you a VM totally for free (but without static IP).</descri
     
     <item>
       <title>Your WM keybinds aren&#39;t vim-like, are emacs-like</title>
-      <link>https://miguelrcborges.github.io/blog/wm-keybinds/</link>
+      <link>https://blog.miguelneedssleep.ml/wm-keybinds/</link>
       <pubDate>Tue, 06 Sep 2022 13:56:53 +0100</pubDate>
       
-      <guid>https://miguelrcborges.github.io/blog/wm-keybinds/</guid>
+      <guid>https://blog.miguelneedssleep.ml/wm-keybinds/</guid>
       <description>I&amp;rsquo;ve read in a lot of places people commenting that tiling windows managers offer you &amp;ldquo;vim-like&amp;rdquo; keybinds. Those statements are somewhat inaccurate.
 Vim is a modal based text editor. It relies on modes to do certain groups of actions. Even though Emacs is also extensible and customizable, it isn&amp;rsquo;t modal based. Emacs relies on keybinds that are &amp;ldquo;chords&amp;rdquo;, composed by a key with some Mnemonies and another key that act as a kind of a modifier.</description>
     </item>
     
     <item>
       <title>First Post</title>
-      <link>https://miguelrcborges.github.io/blog/first-post/</link>
+      <link>https://blog.miguelneedssleep.ml/first-post/</link>
       <pubDate>Sun, 17 Jul 2022 01:03:20 +0100</pubDate>
       
-      <guid>https://miguelrcborges.github.io/blog/first-post/</guid>
+      <guid>https://blog.miguelneedssleep.ml/first-post/</guid>
       <description>I deleted my past posts I did a system reinstall and noticed that pandoc is bloated, if you don&amp;rsquo;t use haskell and it&amp;rsquo;s dependencies (around 500 MBs).
 I ended up replacing pandoc with Hugo, because it&amp;rsquo;s:
 Written in Go, one of the languages that I like the most; Extensible; Relatively lightwheight (50 MBs total); My experience on remaking the blog on Hugo It was confusing at first. I wasn&amp;rsquo;t being able to find how I would theme it without relying on a theme.</description>
