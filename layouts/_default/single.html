@@ -1,4 +1,5 @@
 {{ define "main" }}
+	<a href="{{ .Site.Home.Permalink }}">Home</a>
   <h1>{{ .Title }}</h1>
   <p>Post date: {{ .Date }}</p>
   <p>Reading time: {{ .ReadingTime }} minute(s)</p>
@@ -6,4 +7,6 @@
   <hr width=90% align="center">
   <br>
   {{ .Content }}
-{{end}}
+	<br>
+	<a href="{{ .Site.Home.Permalink }}">Home</a>
+{{ end }}

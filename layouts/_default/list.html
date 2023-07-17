@@ -1,6 +1,6 @@
 {{ define "main" }}
 <h1>{{ .Site.Title }}</h1>
-<p>Git: <code>ssh vps.miguelneedssleep.ml -p 23231</code><p>
+<a href="https://miguelneedssleep.ml/">Personal Website</a>
   <br>
   {{ range .Pages }}
     <div class="post">
@@ -8,5 +8,5 @@
       <p>Reading time: {{ .ReadingTime }} minute(s)</p>
       <P>Date: {{ .Date }}</p>
     </div>
-  {{end}}
-{{end}}
+  {{ end }}
+{{ end }}
