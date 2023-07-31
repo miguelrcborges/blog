@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Miguel Borges&#39; Blog</title>
-    <link>https://blog.miguelneedssleep.ml/tags/</link>
+    <link>https://blog.miguelrcborges.rocks/tags/</link>
     <description>Recent content in Tags on Miguel Borges&#39; Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://blog.miguelneedssleep.ml/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://blog.miguelrcborges.rocks/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
