@@ -3,6 +3,7 @@
 :root {
   --bg: #1e1e2e;
   --fg: #cdd6f4;
+  --ligher-bg: #313244;
 
   --primary: #a6e4a1;
   --secondary: #89b4f4;
@@ -48,8 +49,17 @@ a, a:visited {
 }
 
 code {
-  /* border: 1px solid var(--primary);
-  border-radius: 5px; */
-  background-color: #313244;
-  padding: 3px;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 13px;
+  width: inherit;
+  display: flex;
+}
+
+li>code, p>code {
+  display: unset;
+  width: unset;
+  border: unset;
+  background-color: var(--ligher-bg);
+  padding: 0px;
 }

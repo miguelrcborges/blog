@@ -12,7 +12,7 @@
       <pubDate>Sun, 06 Aug 2023 12:56:35 +0100</pubDate>
       
       <guid>https://blog.miguelrcborges.rocks/arrays/</guid>
-      <description>Data strucutres is an essencial topic which mostly defines the quality of a program. Replacing algorithms to more suited ones should also lead to speedups, although their influence will be magnitudes lower than the speedup there would be replacing the data structures to the adequate ones.
+      <description>Data strucutres is an essential topic which mostly defines the quality of a program. Replacing algorithms to more suited ones should also lead to speedups, although their influence will be magnitudes lower than the speedup there would be replacing the data structures to the adequate ones.
 In this blog, I plan to start a series where I write about a specific data structure. It should start from most simple data structures to more complex ones.</description>
     </item>
     
