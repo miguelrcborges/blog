@@ -4,7 +4,7 @@ date: 2023-08-06T12:56:35+01:00
 draft: false 
 ---
 
-Data strucutres is an essencial topic which mostly defines the quality
+Data strucutres is an essential topic which mostly defines the quality
 of a program. Replacing algorithms to more suited ones should also 
 lead to speedups, although their influence will be magnitudes lower than
 the speedup there would be replacing the data structures to the
