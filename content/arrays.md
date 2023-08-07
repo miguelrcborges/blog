@@ -88,13 +88,13 @@ Arrays should probably be the best option when the amount of working memory is l
 since moving the memory on insertions/deletions will have a small cost.
 
 In higher memory loads, should be considered the amount of needed insertions/deletions.
-If it is needed to do frequently this operations, should be considered using a linked list
-(the data structure which will be addressed in the next article).
+If it is needed to do frequently these operations, should be considered using instead a linked
+list (the data structure which will be addressed in the next article).
 Another possible solution would be a mix of the both structures, a linked list of
 arrays.
 
 
-# Extra resources:w
+# Extra resources
 
 - [A paper which addresses the value of good memory locality. The paper is a bit complex so don't mind not getting it immediatally](https://www.akkadia.org/drepper/cpumemory.pdf)
 - [Wikipedia's Array Page](https://en.wikipedia.org/wiki/Array_(data_structure))
