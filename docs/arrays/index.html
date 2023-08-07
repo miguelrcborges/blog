@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://blog.miguelrcborges.rocks/css/global.css">
+  
+  
+  <title>Miguel Borges&#39; Blog | Data Structures and Algorithms 1 - Arrays</title>
+</head>
+
+  <body>
+    
+	<a href="https://blog.miguelrcborges.rocks/">Home</a>
+  <h1>Data Structures and Algorithms 1 - Arrays</h1>
+  <p>Post date: 2023-08-06 12:56:35 &#43;0100 WEST</p>
+  <p>Reading time: 3 minute(s)</p>
+  <br>
+  <hr width=90% align="center">
+  <br>
+  <p>Data strucutres is an essencial topic which mostly defines the quality
+of a program. Replacing algorithms to more suited ones should also
+lead to speedups, although their influence will be magnitudes lower than
+the speedup there would be replacing the data structures to the
+adequate ones.</p>
+<p>In this blog, I plan to start a series where I write about a specific
+data structure. It should start from most simple data structures to more
+complex ones. It should start friendly enough for people which are
+just starting out.</p>
+<h1 id="arrays">Arrays</h1>
+<p>Arrays correspond to a continuos block of memory of the same memory size.
+This strucuture allows to assign multiple values with the same indentifier,
+where you can specify and element with an index.</p>
+<p>For a given type T, an implementation of an array should look like this:</p>
+<pre tabindex="0"><code>struct TArray {
+	T *arr;
+	size_t len;
+}
+</code></pre><p>There are also native arrays on C, but they fallback to pointers when passing
+to functions (reason why most function prototypes which receives arrays receive
+separately the array pointer and its count).</p>
+<pre tabindex="0"><code>T arr[] = { ... }
+size_t len = sizeof(arr)/(sizeof(arr[0]))
+</code></pre><p>C++ tries to solve this problem by implementing the
+<a href="https://en.cppreference.com/w/cpp/container/array">array cointainer</a>.</p>
+<p>Should also be noted that C supports
+<a href="https://en.cppreference.com/w/c/language/array">declaring arrays in the function parameter list</a>.</p>
+<h2 id="data-structure-analysis">Data Structure Analysis</h2>
+<p>Being a continuous block of memory, it is the data structure which offers
+the best memory locality. It is also the most efficient data structure in
+terms of memory consumption.</p>
+<p>One of the problems associated with the arrays is that they have a constant
+size. Such can be solved with resizable arrays.
+C++ <a href="https://en.cppreference.com/w/cpp/container/vector">std::vector</a> is an
+example of a resizable array (and not really of a mathematical vector). In C,
+you are able to resize an array with
+<a href="https://en.cppreference.com/w/c/memory/realloc">realloc</a> (this is, if the way
+you allocated the array with a compatible function).</p>
+<p>The only additional cost of resizable arrays over standard arrays is the on
+initialization. Since arrays have a constant size, they can be stack allocated.</p>
+<p>Arrays have constant time access. That makes access of any element pretty quick.
+Their are however limited on inserting/deleting elements:</p>
+<ul>
+<li>Deleting an element implies moving all values from the removed element until the
+end of the array a position backwards.</li>
+<li>Insertions may require to resize the array and will be needed to move elements
+(either moving them by a position, or moving them to the new memory allocated
+on the resize).</li>
+</ul>
+<h2 id="usecases">Usecases</h2>
+<p>Arrays will be the data structure that most likely you will use more. They are also
+common as a component of more specific data structures, like hash tables.</p>
+<p>A lot of people believe that
+<a href="https://youtu.be/fHNmRkzxHWs?t=2457">your data strucutres should derive everytime of arrays</a>,
+which you should take it with a grain of salt and benchmark to see which
+structure fits the best on your scenario.</p>
+<p>Arrays should probably be the best option when the amount of working memory is low,
+since moving the memory on insertions/deletions will have a small cost.</p>
+<p>In higher memory loads, should be considered the amount of needed insertions/deletions.
+If it is needed to do frequently this operations, should be considered using a linked list
+(the data structure which will be addressed in the next article).
+Another possible solution would be a mix of the both structures, a linked list of
+arrays.</p>
+<h1 id="extra-resourcesw">Extra resources:w</h1>
+<ul>
+<li><a href="https://www.akkadia.org/drepper/cpumemory.pdf">A paper which addresses the value of good memory locality. The paper is a bit complex so don&rsquo;t mind not getting it immediatally</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Array_(data_structure)">Wikipedia&rsquo;s Array Page</a></li>
+<li><a href="https://en.cppreference.com/w/cpp/container/array">C++&rsquo;s std::array</a></li>
+<li><a href="https://en.cppreference.com/w/cpp/container/vector">C++&rsquo;s std::vector (resizable array)</a></li>
+</ul>
+
+	<br>
+	<a href="https://blog.miguelrcborges.rocks/">Home</a>
+
+  </body>
+</html>

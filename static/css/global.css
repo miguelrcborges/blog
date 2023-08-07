@@ -7,22 +7,32 @@
   --primary: #a6e4a1;
   --secondary: #89b4f4;
   --third: #f38ba8;
+
+  font-size: 62.5%;
 }
 
 body {
   color: var(--fg);
   background-color: var(--bg);
   font-family: 'JetBrains Mono', monospace;
-  width: min(85vw, 700px);
+  width: min(85vw, 900px);
   margin: min(10vh, 50px) auto;
+
+  font-size: 1.6rem;
+  text-align: justify;
 }
 
 h1 {
   color: var(--primary);
+  font-size: 2.7rem;
+
+  margin: 3.2rem 0 1.6rem 0;
 }
 
 h2 {
   color: var(--secondary);
+  font-size: 2.25rem;
+  margin: 2.4rem 0 1.0rem 0;
 }
 
 a, a:visited {
@@ -34,15 +44,12 @@ a, a:visited {
   border: 4px dashed var(--fg);
   border-radius: 20px;
   padding: 20px;
-  margin: 2.0rem 0;
+  margin: 4.0rem 0;
 }
 
 code {
-  border: 1px solid var(--primary);
-  border-radius: 5px;
+  /* border: 1px solid var(--primary);
+  border-radius: 5px; */
+  background-color: #313244;
   padding: 3px;
-}
-
-li {
-  line-height: 1.5em;
 }
