@@ -518,3 +518,17 @@ OCaml at all.
 8. I wish the main Go compiler had vectorization.
     - Even in Python you can import numpy and have a SPMD programming approach.
 9. Even though I used FP in this example, OOP paradigms wouldn't be better.
+
+
+
+## Hardware and Software used
+- C compiler: clang version 18.1.8 mingw
+- OCaml compiler: ocamlopt 5.2.1
+
+- OS: Windows 10 21H2 LTSC IoT
+- Benchmarking: Hyperfine 1.19.0
+
+- Laptop: Zenbook UM425
+    - CPU: AMD Ryzen R5 4500U
+    - RAM: 8 GB
+    - It ain't much, but it's honest work.
