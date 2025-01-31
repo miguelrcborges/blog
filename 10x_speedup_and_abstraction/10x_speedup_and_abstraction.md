@@ -514,7 +514,7 @@ OCaml at all.
     - You are using instructions that can be used on vectors (no integer division!)
     - Make all conditional code be reliant on ternaries instead of ifs.
     - No early returns, at least not in the vectorizing section: create a nested loop for the vector part.
-7. Use ISPC if you want to make sure your compiler will vectorize (it forces you to modelate your program for vectorization).
+7. Use ISPC if you want to make sure your compiler will vectorize (it forces you to model your program for vectorization).
 8. I wish the main Go compiler had vectorization.
     - Even in Python you can import numpy and have a SPMD programming approach.
 9. Even though I used FP in this example, OOP paradigms wouldn't be better.
