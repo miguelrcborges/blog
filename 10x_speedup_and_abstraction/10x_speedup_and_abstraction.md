@@ -319,7 +319,6 @@ void TestPrime(DynArray *primes, uint32_t val) {
         bool should_return = false;
         for (size_t ii = 0; ii < 8; ii += 1) {
             double q = trunc(dval / tmp[ii]);
-            double r = dval - q * tmp[ii];
             should_return = dval == q * tmp[ii] ? true : should_return; 
         }
         if (should_return) {
