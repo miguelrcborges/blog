@@ -97,7 +97,7 @@ Printf.printf "%d\n" result;
 ```
 
 **Note**: The DynamicArray module has some more methods that it needed because
-some of them were used while testing (iter) and others because it feels goofy
+some of them were used while testing (`iter`) and others because it feels goofy
 not having them (`exists` when `for_all` is defined)
 
 **Note 2**: Yes I know this isn't the best algorithm to find primes, but I
@@ -167,7 +167,7 @@ int main(void) {
 
 **Note 3**: Yes, I know that in the C version the dynamic array doesn't start
 with any preallocated slots. Those microseconds difference won't matter in the
-final outcode and I want to do
+final outcome and I want to do
 [ZII](https://www.youtube.com/watch?v=xt1KNDmOYqA).
 
 Granted, after compiling the code with optimizations (both OCaml and C were
