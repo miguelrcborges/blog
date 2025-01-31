@@ -166,11 +166,13 @@ int main(void) {
 ```
 
 **Note 3**: Yes, I know that in the C version the dynamic array doesn't start
-with any preallocated slots for the dynamic array. Those microseconds difference
-won't matter in the final outcode and I want to do [ZII](https://www.youtube.com/watch?v=xt1KNDmOYqA).
+with any preallocated slots. Those microseconds difference won't matter in the
+final outcode and I want to do
+[ZII](https://www.youtube.com/watch?v=xt1KNDmOYqA).
 
-Granted, after compiling the code with optimizations (both OCaml and C were being compiled with `-O3`),
-found out that the C and OCaml version were at the same speed.
+Granted, after compiling the code with optimizations (both OCaml and C were
+being compiled with `-O3`), found out that the C and OCaml version were at the
+same speed.
 
 
 
