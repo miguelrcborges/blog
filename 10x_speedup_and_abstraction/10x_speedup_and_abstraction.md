@@ -539,7 +539,11 @@ OCaml at all.
 # Edit
 
 I found out after the blog post through feedback that this isn't the ideal algorithm.
+
 A good determinisc and simple algorithm is the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).
+
 Here is a simple implementation of the algorithm in Go using a bitset to reduce memory usage and improve memory locality: https://pastebin.com/cyKkxyHy.
+
+
 
 Even though I wasn't using the best algorithm, I believe that the point of the blog post still persists and I hope it familiarizes the readers the process and the impact of vectorizing code.
